@@ -1,0 +1,34 @@
+.container{
+    background-color:antiquewhite;
+}
+
+.form{
+    background-color: black !important;
+}
+
+.name-label{
+    color: antiquewhite;
+    font-size: larger;
+}
+
+thead th{
+    background-color:maroon;
+    font-size: larger;
+    color: white;
+}
+
+tbody td{
+    background-color: lightgrey;
+    font-size: larger;
+    font-weight: 500;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.btn:hover {
+    border-radius: 5px;
+    background-color: rgb(219, 169, 104);
+}
+
+.font-color {
+    color: greenyellow;
+}

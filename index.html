@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./index.css" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <h1 id ="title">Forms</h1>
+        <p id ="description">Fill your Details and select atleast 2 options in Food Choice</p>
+        <div class = "wrapper">
+          <form class="form" id = "form">
+            <fieldset class="fieldset">
+                <div class = "name-row form-group">
+                <label class = "name-label"name ="namelabel">Name *: </label>
+                <input type="text" class = "ip-name" id="first-name" placeholder="First Name" required>
+                <input type="text" class = "ip-name" id="last-name" placeholder="Last Name" required>
+            </div>
+            <div class = "name-row form-group">
+                <label class = "name-label"name ="namelabel">Email *: </label>
+                <input type="email" class = "ip-name" id="mail" placeholder="Enter your email">
+            </div>
+            <div class = "name-row form-group">
+                <label class = "name-label "name ="address">Address *: </label>
+                <textarea type="text" class = "ip-address ip-name" id="address" placeholder="Enter your Address" required></textarea>
+            </div>
+            <div class = "name-row form-group">
+                <label class = "name-label"name ="pincode">Pincode *: </label>
+                <input type="text" class = "ip-name pin" id="pincode" placeholder="Enter your Pincode" required>
+            </div>
+
+            <div class = "checkbox1 font-color">
+                <label class = "name-label">Gender *:</label>
+                    <input type="radio" name="gender" id="rb1" class="font-color" value="male" />Male
+                    <input type="radio" name="gender" id="rb2" class="font-color" value="female" />Female
+                    <input type="radio" name="gender" id="rb3" class="font-color" value="others" />Others   
+            </div>
+
+            <div class = "checkbox font-color">
+                <label class = "name-label" name = "food">Choice of food *:</label>
+                <input type = "checkbox" id ="cb1" name = "food" value="Briyani">Briyani
+                <input type = "checkbox" id ="cb2" name = "food" value="Rice">Rice
+                <input type = "checkbox" id ="cb3" name = "food" value="Dosa">Dosa
+                <input type = "checkbox" id ="cb4" name = "food" value="Idly">Idly
+                <input type = "checkbox" id ="cb5" name = "food" value="Parrota">Parrota
+                
+            </div>
+
+            <div class = "name-row">
+                <label class = "name-label"  name ="state">State *: </label>
+                <input type="text" class = "ip-name" id ="st" placeholder="Enter your State">
+            </div>
+
+            <div class = "name-row">
+                <label class = "name-label"name ="country">Country *: </label>
+                <input type="text" class = "ip-name" id ="con" placeholder="Enter your Country">
+            </div>
+
+            <div class = "btn-div">
+                <button type="button" class = "btn btn-primary" id="submit">SUBMIT</button>
+            </div>
+        </fieldset>
+            </form>
+        
+        </div>
+        <div class="table-div">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th class="width">Field</th>
+                    <th class="wider">Details</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Name</td>
+                    <td id="td1"></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td id="td8"></td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td id="td2"></td>
+                </tr>
+                <tr>
+                    <td>Pincode</td>
+                    <td id="td3"></td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td id="td4"></td>
+                </tr>
+                <tr>
+                    <td>Food</td>
+                    <td id="td5"></td>
+                </tr>
+                <tr>
+                    <td>State</td>
+                    <td id="td6"></td>
+                </tr>
+                <tr>
+                    <td>Country</td>
+                    <td id="td7"></td>
+                </tr>
+            </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+</body>
+</html>
